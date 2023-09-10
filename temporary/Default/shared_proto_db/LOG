@@ -1,2 +1,3 @@
-2023/09/09-11:24:20.458 261d Creating DB /media/kaiyum/Document/web-automation/explore-puppeteer/temporary/Default/shared_proto_db since it was missing.
-2023/09/09-11:24:20.568 261d Reusing MANIFEST /media/kaiyum/Document/web-automation/explore-puppeteer/temporary/Default/shared_proto_db/MANIFEST-000001
+2023/09/10-10:39:30.391 3aaa Reusing MANIFEST /media/kaiyum/Document/web-automation/explore-puppeteer/temporary/Default/shared_proto_db/MANIFEST-000001
+2023/09/10-10:39:30.393 3aaa Recovering log #3
+2023/09/10-10:39:30.394 3aaa Reusing old log /media/kaiyum/Document/web-automation/explore-puppeteer/temporary/Default/shared_proto_db/000003.log 
