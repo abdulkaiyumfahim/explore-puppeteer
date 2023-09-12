@@ -12,9 +12,7 @@ const page = await browser.newPage();
 await page.goto("https://duckduckgo.com/", { waitUntil: "networkidle2" });
 await page.waitForSelector("#searchbox_input");
 await page.type("#searchbox_input", "devconfbd");
-// await page.$(".searchbox_searchButton__F5Bwq iconButton_button__6x_9C");
 await page.click(`[aria-label="Search"]`);
-// await page.waitForSelector(`[aria-label="Search Results"]`);
 try {
   await page.waitForSelector(`[aria-label="Search Results"]`, {
     timeout: 60000,
