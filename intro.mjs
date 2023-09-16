@@ -24,6 +24,17 @@ try {
   );
 }
 
+// try {
+//   await page.waitForSelector(`[aria-label="Search Results"]`, {
+//     timeout: 60000,
+//   }); // Increased timeout to 60 seconds
+// } catch (error) {
+//   console.error(
+//     "Element not found within the specified timeout:",
+//     error.message
+//   );
+// }
+
 await page.screenshot({ path: "duckduckgo.png" });
 
 await browser.close();
