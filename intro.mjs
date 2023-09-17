@@ -26,6 +26,4 @@ try {
 
 await page.screenshot({ path: "duckduckgo.png" });
 
-// await page.screenshot({ path: "duckduckgo.png" });
-
 await browser.close();
