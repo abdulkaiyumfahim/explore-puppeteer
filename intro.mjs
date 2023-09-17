@@ -9,6 +9,8 @@ const browser = await puppeteer.launch({
 
 const page = await browser.newPage();
 
+// const page = await browser.newPage();
+
 await page.goto("https://duckduckgo.com/", { waitUntil: "networkidle2" });
 await page.waitForSelector("#searchbox_input");
 await page.type("#searchbox_input", "devconfbd");
