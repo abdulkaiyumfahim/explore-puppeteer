@@ -14,6 +14,17 @@ await page.waitForSelector("#searchbox_input");
 await page.type("#searchbox_input", "devconfbd");
 await page.click(`[aria-label="Search"]`);
 
+// try {
+//   await page.waitForSelector(`[aria-label="Search Results"]`, {
+//     timeout: 60000,
+//   }); // Increased timeout to 60 seconds
+// } catch (error) {
+//   console.error(
+//     "Element not found within the specified timeout:",
+//     error.message
+//   );
+// }
+
 try {
   await page.waitForSelector(`[aria-label="Search Results"]`, {
     timeout: 60000,
