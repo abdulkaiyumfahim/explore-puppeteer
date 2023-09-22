@@ -7,7 +7,7 @@ const browser = await puppeteer.launch({
   userDataDir: "temporary",
 });
 
-const page = await browser.newPage();
+// const page = await browser.newPage();
 
 await page.goto("https://duckduckgo.com/", { waitUntil: "networkidle2" });
 await page.waitForSelector("#searchbox_input");
@@ -26,5 +26,7 @@ try {
 }
 
 await page.screenshot({ path: "duckduckgo.png" });
+
+// await page.screenshot({ path: "duckduckgo.png" });
 
 await browser.close();
