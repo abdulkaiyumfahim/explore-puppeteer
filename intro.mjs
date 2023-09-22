@@ -7,6 +7,13 @@ const browser = await puppeteer.launch({
   userDataDir: "temporary",
 });
 
+// const browser = await puppeteer.launch({
+//   headless: false,
+//   defaultViewport: { width: 1920, height: 1080 },
+//   slowMo: 250,
+//   userDataDir: "temporary",
+// });
+
 const page = await browser.newPage();
 
 await page.goto("https://duckduckgo.com/", { waitUntil: "networkidle2" });
