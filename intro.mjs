@@ -1,7 +1,5 @@
 import puppeteer from "puppeteer";
 
-// import puppeteer from "puppeteer";
-
 const browser = await puppeteer.launch({
   headless: false,
   defaultViewport: { width: 1920, height: 1080 },
